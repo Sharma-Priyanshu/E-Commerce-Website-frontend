@@ -71,8 +71,9 @@
       </div>
       <div class="single-pro-details">
         <h6>Home / T-Shirts</h6>
-        <h4>Men's Fashion T-Shirts</h4>
-        <h2>$139</h2>
+        <h4 id="mainProductName">Men's Fashion T-Shirts</h4>
+        <h5 id="mainProName">Cartoon Astronaut T-shirts</h5>
+        <h2 id="mainPrice">799 Rs.</h2>
 
         <select>
           <option value="">Select Size</option>
@@ -100,11 +101,11 @@
       <h2>Featured Products</h2>
       <p>Summer Collection New Modern Designs</p>
       <div class="pro-container">
-        <div class="product">
-          <img src="./img/products/n5.jpg" alt="" />
+        <div class="product" id="pro1">
+          <img id="pro-img1" src="./img/products/n5.jpg" alt="" />
           <div class="des">
             <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <h5 id="proName1">Classic Formal Shirt</h5>
             <div class="star">
               <i class="fa-solid fa-star star"></i>
               <i class="fa-solid fa-star star"></i>
@@ -112,15 +113,15 @@
               <i class="fa-solid fa-star star"></i>
               <i class="fa-solid fa-star star"></i>
             </div>
-            <h4>$78</h4>
-            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            <h4 id="proPrice1">599 Rs.</h4>
+            <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
           </div>
         </div>
-        <div class="product">
-          <img src="./img/products/n6.jpg" alt="" />
+        <div class="product" id="pro2">
+          <img id="pro-img2" src="./img/products/n6.jpg" alt="" />
           <div class="des">
             <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <h5 id="proName2" >Premium Jeans Short</h5>
             <div class="star">
               <i class="fa-solid fa-star star"></i>
               <i class="fa-solid fa-star star"></i>
@@ -128,15 +129,15 @@
               <i class="fa-solid fa-star star"></i>
               <i class="fa-solid fa-star star"></i>
             </div>
-            <h4>$78</h4>
-            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            <h4 id="proPrice2">649 Rs.</h4>
+            <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
           </div>
         </div>
-        <div class="product">
-          <img src="./img/products/n7.jpg" alt="" />
+        <div class="product" id="pro3">
+          <img id="pro-img3" src="./img/products/n7.jpg" alt="" />
           <div class="des">
             <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <h5 id="proName3" >Casual Brown Shirt</h5>
             <div class="star">
               <i class="fa-solid fa-star star"></i>
               <i class="fa-solid fa-star star"></i>
@@ -144,15 +145,15 @@
               <i class="fa-solid fa-star star"></i>
               <i class="fa-solid fa-star star"></i>
             </div>
-            <h4>$78</h4>
-            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            <h4 id="proPrice3">549 Rs.</h4>
+            <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
           </div>
         </div>
-        <div class="product">
-          <img src="./img/products/n8.jpg" alt="" />
+        <div class="product" id="pro4">
+          <img id="pro-img4" src="./img/products/n8.jpg" alt="" />
           <div class="des">
             <span>adidas</span>
-            <h5>Cartoon Astronaut T-Shirts</h5>
+            <h5 id="proName4" >Loose Fashion Shirt</h5>
             <div class="star">
               <i class="fa-solid fa-star star"></i>
               <i class="fa-solid fa-star star"></i>
@@ -160,8 +161,8 @@
               <i class="fa-solid fa-star star"></i>
               <i class="fa-solid fa-star star"></i>
             </div>
-            <h4>$78</h4>
-            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            <h4 id="proPrice4">399 Rs.</h4>
+            <a href="cart.html"><i class="fas fa-shopping-cart cart"></i></a>
           </div>
         </div>
       </div>
@@ -237,9 +238,9 @@
     <p id="copyright">&#169; 2022. PS-Coder - Cara E-commerce template</p>
 
     <script>
-var mainImg = document.querySelector(".mainImg");
+      var mainImg = document.querySelector(".mainImg");
 var smallImg = document.querySelectorAll(".smallImg");
-
+      
 smallImg[0].addEventListener('click', ()=> {
     mainImg.src = smallImg[0].src;
 })
@@ -261,5 +262,6 @@ smallImg[3].addEventListener('click', ()=> {
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+   <script src="product.js"></script>
   </body>
 </html>
